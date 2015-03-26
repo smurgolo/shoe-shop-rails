@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'stores/stores'
+
+  get 'stores/createStore'
+
+  get 'service/stores', to: 'stores#serviceStores'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

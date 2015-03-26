@@ -2,5 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="development" uuid="2bd1d586-8194-4b70-99fd-085d2adaed2d" />
+    <data-source name="Rails shoe-shop: development" uuid="05bf0b83-e893-496f-922a-ae30da0a980a" />
+    <data-source name="Rails shoe-shop: test" uuid="d94e3559-44b5-431a-a9cb-659c20c5eee4" />
   </component>
 </project>
