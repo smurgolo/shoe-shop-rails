@@ -7,8 +7,48 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <div class="innerContainer">
+    <h1 id="title"> Admin <br> Shoe Stores</h1>
+    <nav>
+      <ul id="navigationContainer">
+        <li><a href="newStore" class="green">Add Store</a></li>
+        <li><a href="newArticle" class="green">Add Article</a></li>
+        <li><a href="features.html">List all Articles</a></li>
+        <li><a href="index.html">List all Stores</a></li>
+      </ul>
+    </nav>
+    <hr/>
+  </div>
+</header>
+<section>
+  <div class="innerContainer">
+    <%= yield %>
+  </div>
+</section>
 
-<%= yield %>
+<footer>
+  <div class="innerContainer">
+      <hr/>
+      <div class="footer-left">
+        <h3>Company<span>logo</span></h3>
+        <p class="footer-company-name">Company Name &copy; 2015</p>
+      </div>
+
+      <div class="footer-center">
+          <p><span>21 Revolution Street</span> Paris, France</p><br/>
+          <p>+1 555 123456</p><br/>
+          <p><a href="mailto:support@company.com">support@company.com</a></p><br/>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+      </div>
+  </div>
+</footer>
 
 </body>
 </html>
