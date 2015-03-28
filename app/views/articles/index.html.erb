@@ -1,0 +1,30 @@
+<h1>Listing all Articles: </h1>
+
+<table>
+  <tr>
+    <th>name</th>
+    <th>description</th>
+    <th>price</th>
+    <th>total in shelf</th>
+    <th>total in vault</th>
+    <th>store name</th>
+  </tr>
+  <% articles = Article.all %>
+  <% articles.each do |article| %>
+      <tr>
+        <td><%=	article.name  %></td>
+        <td><%=	article.description  %></td>
+        <td><%=	article.price  %></td>
+        <td><%=	article.total_in_shelf  %></td>
+        <td><%=	article.total_in_vault  %></td>
+        <td><%=	article.store.name  %></td>
+        <td><%=	link_to "Edit", edit_article_path(article.id)  %></td>
+        <td><%=	link_to "Delete", article, method: :delete  %></td>
+      </tr>
+  <% end %>
+  <% if articles.size == 0 %>
+      <em>No Articles Found</em>
+  <% end %>
+</table>
+
+

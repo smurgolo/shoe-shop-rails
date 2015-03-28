@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get 'service/stores', to: 'stores#allStores'
+  get 'service/articles', to: 'articles#allArticles'
+  get 'service/articles/stores/:store_id', to: 'articles#store'
 
   resources :stores
+  resources :articles
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

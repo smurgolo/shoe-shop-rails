@@ -1,0 +1,39 @@
+<h1>Create new Article</h1>
+<p>add data to create new article:</p>
+
+
+<%= form_for :article, url: articles_path do |f| %>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_field :description %>
+    </p>
+
+    <p>
+      <%= f.label :price %><br>
+      <%= f.number_field :price %>
+    </p>
+
+    <p>
+      <%= f.label :total_in_shelf %><br>
+      <%= f.number_field :total_in_shelf %>
+    </p>
+
+    <p>
+      <%= f.label :total_in_vault %><br>
+      <%= f.number_field :total_in_vault %>
+    </p>
+
+    <p>
+      <%= f.label :store %><br>
+      <%= f.collection_select :store, Store.all, :id, :name,  include_blank: false  %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>

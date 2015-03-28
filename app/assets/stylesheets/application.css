@@ -61,7 +61,11 @@ header nav {
     text-align: left;
     width: 760px;
     zoom: 1;
-    padding-top: 20px;
+    padding-top: 25px;
+}
+
+header nav ul {
+    display: inline-block;
 }
 
 header nav li {
@@ -69,7 +73,7 @@ header nav li {
 }
 
 header nav li:first-child a {
-    padding-right: 0px;
+    padding-left: 0px;
 }
 
 header nav a {
@@ -80,10 +84,10 @@ header nav a {
     cursor: pointer;
     display: inline-block;
     float: left;
-    font-size: 17px;
+    font-size: 20px;
     height: 60px;
     line-height: 60px;
-    padding: 0px 10px;
+    padding: 0px 15px;
     text-decoration: none;
     outline: none;
     zoom: 1;
@@ -95,7 +99,7 @@ a.green {
 }
 
 section{
-    min-height: 400px;
+    min-height: 300px;
 }
 
 
@@ -135,7 +139,7 @@ footer h3{
 }
 
 footer h3 span{
-    color:  #5383d3;
+    color:  #00B966;
 }
 
 /* Footer links */
@@ -182,7 +186,7 @@ footer .footer-center p span{
 }
 
 footer .footer-center p a{
-    color:  #5383d3;
+    color:  #00B966;
     text-decoration: none;;
 }
 

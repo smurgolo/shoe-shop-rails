@@ -12,10 +12,10 @@
     <h1 id="title"> Admin <br> Shoe Stores</h1>
     <nav>
       <ul id="navigationContainer">
-        <li><a href="newStore" class="green">Add Store</a></li>
-        <li><a href="newArticle" class="green">Add Article</a></li>
-        <li><a href="features.html">List all Articles</a></li>
-        <li><a href="index.html">List all Stores</a></li>
+        <li><%=link_to "Add Store", new_store_path, class: "green"%></li>
+        <li><%=link_to "Add Article", new_article_path, class: "green"%></li>
+        <li><%=link_to "List all Articles", articles_path, class: "green"%></li>
+        <li><%=link_to "List all Stores", stores_path, class: "green"%></li>
       </ul>
     </nav>
     <hr/>

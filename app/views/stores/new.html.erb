@@ -1,2 +1,19 @@
-<h1>Stores#newStore</h1>
-<p>Find me in app/views/stores/newStore.html.erb</p>
+<h1>Create new store</h1>
+<p>add data to create new store:</p>
+
+
+<%= form_for :store, url: stores_path do |f| %>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.label :address %><br>
+      <%= f.text_field :address %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
